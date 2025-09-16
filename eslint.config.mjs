@@ -49,6 +49,18 @@ export default withNuxt(
             ignore: ["README.md"],
           },
         ],
+        "vue/html-self-closing": [
+          "error",
+          {
+            html: {
+              void: "never", // br, img и т.д.
+              normal: "never", // обычные теги (например main, div) не требуют self-close
+              component: "always", // компоненты Vue всегда self-close
+            },
+            svg: "always",
+            math: "always",
+          },
+        ],
       },
     },
   ),
