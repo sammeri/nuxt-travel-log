@@ -14,6 +14,10 @@ jobs:
       NODE_ENV: development
       TURSO_DATABASE_URL: ${{ secrets.TURSO_DATABASE_URL }}
       TURSO_AUTH_TOKEN: ${{ secrets.TURSO_AUTH_TOKEN }}
+      BETTER_AUTH_SECRET: ${{ LLxzitwuO0AJD8MmwipgNM0L1oddE48Zss93gXOXM4M= }}
+      BETTER_AUTH_URL: ${{ http://localhost:3000 }} # Base URL of your app
+      AUTH_GITHUB_CLIENT_ID: ${{ Ov23li6jK2i6dv3JzAbT }}
+      AUTH_GITHUB_CLIENT_SECRET: ${{ dfa00d16d5906582c73dd35091888c4d23ceda81 }}
     steps:
       - uses: actions/checkout@v5
       - name: Install pnpm
