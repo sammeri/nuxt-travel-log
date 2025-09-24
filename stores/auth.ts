@@ -1,9 +1,8 @@
 import { createAuthClient } from "better-auth/client";
 // import { defineStore } from "pinia";
 
-const authClient = createAuthClient();
-
 export const useAuthStore = defineStore("useAuthStore", () => {
+  const authClient = createAuthClient();
   const loading = ref(false);
 
   async function signIn() {
