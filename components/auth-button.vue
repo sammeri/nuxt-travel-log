@@ -10,11 +10,11 @@ const authStore = useAuthStore();
       class="btn m-1"
     >
       <div class="avatar">
-        <div v-if="authStore.user.image" class="w-8 rounded-full">
-          <img :src="authStore.user.image" :alt="authStore.user.name">
+        <div v-if="authStore.user?.image" class="w-8 rounded-full">
+          <img :src="authStore.user?.image" :alt="authStore.user?.name">
         </div>
       </div>
-      {{ authStore.user.name }}
+      {{ authStore.user?.name }}
     </div>
     <ul tabindex="0" class="dropdown-content menu bg-base-200 rounded-box z-1 w-52 p-2 shadow-sm">
       <li>
